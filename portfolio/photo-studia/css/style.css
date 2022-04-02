@@ -2,6 +2,9 @@
 &display=swap
 &subset=cyrillic-ext 
 */
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
@@ -128,9 +131,7 @@ body {
 	color: #000;
 }
 
-.photo-content {
-	
-}
+.photo-content {}
 
 .photo-content_theme_beach {
 	min-height: 716px;
@@ -138,14 +139,19 @@ body {
 	background-size: cover;
 }
 
-.photo-content__wrapper {display: flex;}
-
-.photo-content__inner {
-	
+.photo-content__wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
 }
 
+.photo-content__inner {}
+
 .main-offer {
-	min-width: 580px;
+	align-self: center;
+	text-align: center;
+	max-width: 580px;
+	margin: 0 0 10px 0;
 }
 
 .main-offer__subtitle {
@@ -156,6 +162,7 @@ body {
 .main-offer__title {
 	font-size: 54px;
 	line-height: 60px;
+	margin: 0 0 15px 0;
 }
 
 .main-offer_text {
@@ -163,13 +170,39 @@ body {
 }
 
 .photo-content__row {
+	align-self: flex-end;
+	padding: 10px 0 0 0;
+	display: flex;
 	font-size: 12px;
+	margin-right: 40px;
+
 }
 
-.photo-content__row-exposure {}
+.photo-content__exposure {
+	background: url(../img/exp.png) left / auto 16px no-repeat;
+	padding-left: 20px;
+	min-height: 16px;
+	margin: 0 15px 0 0;
 
-.photo-content__row-membrane {}
+}
 
-.photo-content__row-iso {}
+.photo-content__membrane {
+	background: url(../img/memb.png) left / 16px no-repeat;
+	padding-left: 20px;
+	min-height: 16px;
+	margin: 0 15px 0 0;
+}
 
-.photo-content__row-location {}
+.photo-content__iso {
+	background: url(../img/iso.png) left / auto 16px no-repeat;
+	padding-left: 38px;
+	min-height: 16px;
+	margin: 0 15px 0 0;
+}
+
+.photo-content__location {
+	background: url(../img/loc.png) left / auto 16px no-repeat;
+	padding-left: 16px;
+	min-height: 16px;
+	margin: 0 15px 0 0;
+}
