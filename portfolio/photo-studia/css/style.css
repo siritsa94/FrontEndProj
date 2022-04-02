@@ -1,0 +1,175 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 14px;
+	/* по умолчанию */
+}
+
+body {
+	line-height: 1;
+	color: #000;
+	background-color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
+	color: #fff;
+}
+
+.wrapper {
+	margin: 0 auto;
+	min-height: 100%;
+	overflow: hidden;
+
+	width: 1440px;
+}
+
+/* ------------------------------ */
+.header__wrapper {
+	min-height: 90px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 130px;
+}
+
+.header {
+	background-color: #181818;
+}
+
+.header__logo {
+	min-width: 130px;
+}
+
+.header__menu {
+	display: flex;
+	align-items: center;
+}
+
+.header__menu-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	;
+}
+
+.header__menu-item-title {
+	color: #fff;
+	margin: 0 60px 0 0;
+	font-size: 13px;
+
+}
+
+.header__menu-item:not(:last-child) {
+	margin: 0 30px 0 0
+}
+
+.header__menu-item {
+	font-size: 15px;
+}
+
+.header__menu-item a {
+	color: #fff;
+}
+
+.header__menu-item_active {
+	background: #fff;
+	padding: 10px 20px;
+	border-radius: 10px;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.4px;
+}
+
+.header__menu-item_active a {
+	color: #000;
+}
+
+.photo-content {
+	
+}
+
+.photo-content_theme_beach {
+	min-height: 716px;
+	background-image: url(../img/beach.jpg);
+	background-size: cover;
+}
+
+.photo-content__wrapper {display: flex;}
+
+.photo-content__inner {
+	
+}
+
+.main-offer {
+	min-width: 580px;
+}
+
+.main-offer__subtitle {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.main-offer__title {
+	font-size: 54px;
+	line-height: 60px;
+}
+
+.main-offer_text {
+	line-height: 20px;
+}
+
+.photo-content__row {
+	font-size: 12px;
+}
+
+.photo-content__row-exposure {}
+
+.photo-content__row-membrane {}
+
+.photo-content__row-iso {}
+
+.photo-content__row-location {}
