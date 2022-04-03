@@ -5,7 +5,7 @@
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 /* ОБНУЛЕНИЕ СТИЛЕЙ */
 *,
@@ -67,10 +67,15 @@ body {
 	min-height: 100%;
 	overflow: hidden;
 
-	width: 1440px;
+	max-width: 1440px;
 }
 
 /* ------------------------------ */
+
+
+/* HEADER */
+
+
 .header__wrapper {
 	min-height: 90px;
 	display: flex;
@@ -87,6 +92,9 @@ body {
 	min-width: 130px;
 }
 
+
+/* Main navigation */
+
 .header__menu {
 	display: flex;
 	align-items: center;
@@ -96,7 +104,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	;
+	text-align: center;
 }
 
 .header__menu-item-title {
@@ -131,12 +139,17 @@ body {
 	color: #000;
 }
 
-.photo-content {}
+
+
+/* PHOTO CONTENT BLOCK */
+
+.photo-content {
+	background: linear-gradient(360deg, #000000 18.78%, rgba(0, 0, 0, 0) 98.53%);
+}
 
 .photo-content_theme_beach {
 	min-height: 716px;
-	background-image: url(../img/beach.jpg);
-	background-size: cover;
+	background: url(../img/beach.jpg) center / cover;
 }
 
 .photo-content__wrapper {
@@ -170,11 +183,12 @@ body {
 }
 
 .photo-content__row {
+
 	align-self: flex-end;
 	padding: 10px 0 0 0;
 	display: flex;
 	font-size: 12px;
-	margin-right: 40px;
+	margin: 0 40px 40px 0;
 
 }
 
@@ -205,4 +219,120 @@ body {
 	padding-left: 16px;
 	min-height: 16px;
 	margin: 0 15px 0 0;
+}
+
+
+/* What we do Block */
+
+.what-we-do {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 110px 0;
+}
+
+.what-we-do_title {
+	font-size: 40px;
+	line-height: 42px;
+	margin: 0 0 20px 0;
+}
+
+.what-we-do_subtitle {
+	font-size: 23px;
+	line-height: 30px;
+	margin: 0 0 40px 0;
+}
+
+.what-we-do_items {
+	display: flex;
+	justify-content: space-around;
+	align-content: space-around;
+	max-width: 1200px;
+	flex-wrap: wrap;
+}
+
+.what-we-do__item {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	max-width: 49%;
+	margin: 0 0 15px 0;
+	padding: 430px 30px 0 30px;
+}
+
+.what-we-do__inner-title {
+	margin: 0 0 18px 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.what-we-do__inner-text {
+	margin: 0 0 18px 0;
+	line-height: 20px;
+}
+
+.btn {
+	align-self: flex-start;
+	color: #000;
+	border-radius: 13px;
+	padding: 10px 15px 10px 4px;
+	background: #fff;
+	margin: 0 0 30px 0;
+}
+
+.btn::before {
+	content: "";
+	background-color: #000;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 11px;
+	width: 32px;
+	height: 32px;
+	margin: 0 10px 0 0;
+
+}
+
+.what-we-do__item_bg-product {
+	background: url(../img/prod.jpg) center / cover no-repeat;
+}
+
+.what-we-do__item_bg-arch {
+	background: url(../img/arch.jpg) center / cover no-repeat;
+}
+
+.what-we-do__item_bg-drone {
+	background: url(../img/drone.jpg) center / cover no-repeat;
+}
+
+.what-we-do__item_bg-wild {
+	background: url(../img/wild.jpg) center / cover no-repeat;
+}
+
+
+/* Photo content Sunset block */
+
+
+.photo-content_theme_sunset {
+	background: url(../img/sunset.jpg) center / cover no-repeat;
+
+
+	min-height: 600px;
+}
+
+.offer {
+	align-self: flex-end;
+
+	padding: 0 55px 190px 0;
+}
+
+.offer__title {
+	line-height: 20px;
+	text-transform: uppercase;
+
+
+}
+
+.offer__text {
+	max-width: 300px;
+	line-height: 20px;
 }
